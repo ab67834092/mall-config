@@ -1,0 +1,21 @@
+server:
+  port: 9100
+
+mybatis:
+  mapper-locations: classpath:/mapper/*.xml
+  mybatis.configuration.type-aliases-package: com.cjb.mall.goods.po
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/mall?createDatabaseIfNotExist=true&useUnicode=true&characterEncoding=utf8&autoReconnect=true&allowMultiQueries=true&useSSL=false
+    username: root
+    password: 123456
+    type: com.alibaba.druid.pool.DruidDataSource
+  application:
+      name: goods-service
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:10086/eureka/
