@@ -1,2 +1,0 @@
-# mall-config
-mall-config
